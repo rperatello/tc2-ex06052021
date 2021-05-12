@@ -1,0 +1,7 @@
+<h2>LISTA DE CADASTROS</h2>
+<ul>
+  <li *ngFor="let pessoa of listaPessoas" (click)="onSelect(pessoa)" [class.selecionado]="pessoa == pessoaSelecionada">
+    <span>{{pessoa.nome}}</span>
+  </li>
+</ul>
+

@@ -1,0 +1,30 @@
+
+.menu {
+  grid-area: menu;
+}
+
+.cadastro {
+  grid-area: cadastro;
+}
+
+.pessoa {
+  grid-area: pessoa;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu menu pessoa pessoa'
+    'cadastro cadastro pessoa pessoa';
+  grid-gap: 1px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.grid-container>div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}

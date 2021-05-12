@@ -1,0 +1,9 @@
+<div *ngIf="pessoaSelecionada.nome != ''; then mostrarPessoa else semPessoa"></div>
+<ng-template #mostrarPessoa>
+  <p>Nome: {{pessoaSelecionada.nome}}</p>
+  <p>Idade: {{pessoaSelecionada.idade}}</p>
+  <img src={{pessoaSelecionada.imagem}} width="200" height="300">
+</ng-template>
+<ng-template #semPessoa>
+ <p>Selecione uma Pessoa</p>
+</ng-template>
